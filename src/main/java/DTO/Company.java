@@ -31,7 +31,7 @@ public class Company {
             return new BranchDim(key,sbvEffectDate,parentBranch,sbvCode,branchName,cicCode,cifId,Date.valueOf(LocalDate.now()),new Date(0),new Timestamp(0),0);
         }
         else{
-            return new BranchDim("",new Date(0),"","","",0,0,Date.valueOf(LocalDate.now()),new Date(0),new Timestamp(0),0);
+            return new BranchDim(key,new Date(0),"","",this.getCompany_name(),0,0,Date.valueOf(LocalDate.now()),new Date(0),new Timestamp(0),0);
         }
 
     }
