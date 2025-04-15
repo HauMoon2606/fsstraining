@@ -277,7 +277,6 @@ public class DataStreamJob {
 						.connect(odsCrbBalReduceStream.keyBy(ODS_CRB_BAL::getArrangement_nbr))
 								.process(new TXNAccountBalJoin());
 		resultStream.print();
-
 		env.execute("ODS_CRB_BAL Demo");
 	}
 }
